@@ -35,7 +35,7 @@ class ImagickScanner extends Scanner
 
             $this->imagick = new Imagick($this->imagePath);
             $this->imagick->setResolution(300, 300);
-            $this->imagick->medianFilterImage(2);
+//            $this->imagick->medianFilterImage(2);
             $this->imagick->setImageCompression(imagick::COMPRESSION_JPEG);
             $this->imagick->setImageCompressionQuality(100);
             $this->imagick->blackThresholdImage("#FFFFFF");
